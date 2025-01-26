@@ -27,11 +27,10 @@ metadata:
   labels:
     app: my-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: my-app
   ports:
   - protocol: TCP
     port: 80 
     targetPort: 8888
-    nodePort: 30007 
